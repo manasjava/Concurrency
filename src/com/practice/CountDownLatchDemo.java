@@ -7,7 +7,7 @@ public class CountDownLatchDemo {
 	public static void main(String[] args) {
 		
 		CountDownLatch latch=new CountDownLatch(4);
-		
+		   
 		Worker w1=new Worker(1000,latch,"Worker-1");
 		Worker w2=new Worker(1000,latch,"Worker-2");
 		Worker w3=new Worker(1000,latch,"Worker-3");
