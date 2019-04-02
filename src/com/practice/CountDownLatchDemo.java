@@ -2,6 +2,11 @@ package com.practice;
 
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * CountDownLatch Demo
+ * @author manasranjan.dhal
+ *
+ */
 public class CountDownLatchDemo {
 
 	public static void main(String[] args) {

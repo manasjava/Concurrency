@@ -3,6 +3,11 @@ package com.practice;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
+/**
+ * CyclicBarrier Demo
+ * @author manasranjan.dhal
+ *
+ */
 public class CyclicBarrierDemo {
 
 	public static void main(String[] args) {
