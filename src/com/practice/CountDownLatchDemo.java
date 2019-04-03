@@ -13,10 +13,10 @@ public class CountDownLatchDemo {
 		
 		CountDownLatch latch=new CountDownLatch(4);
 		
-		Worker w1=new Worker(1000,latch,"Worker-1");
-		Worker w2=new Worker(1000,latch,"Worker-2");
-		Worker w3=new Worker(1000,latch,"Worker-3");
-		Worker w4=new Worker(1000,latch,"Worker-4");
+		Worker w1=new Worker(500,latch,"Worker-1");
+		Worker w2=new Worker(500,latch,"Worker-2");
+		Worker w3=new Worker(500,latch,"Worker-3");
+		Worker w4=new Worker(500,latch,"Worker-4");
 		
 		new Thread(w1).start();
 		new Thread(w2).start();
@@ -53,8 +53,8 @@ class Worker implements Runnable{
 		System.out.println(name +" Reached and waiting for others");
 		try {
 			Thread.sleep(delay);
-			latch.countDown();
 			System.out.println(name+" completed processing");
+			latch.countDown();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
