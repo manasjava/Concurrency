@@ -2,6 +2,12 @@ package com.practice;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * Print 0 to 9 using three thread sequentially
+ * 
+ * @author manasranjan.dhal
+ *
+ */
 public class PrintNumberUsingThreeThread {
 
 	public static void main(String[] args) {
