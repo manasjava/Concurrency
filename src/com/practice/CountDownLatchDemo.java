@@ -3,7 +3,7 @@ package com.practice;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * CountDownLatch Demo
+ * CountDownLatch Demo with 4 worker thred
  * @author manasranjan.dhal
  *
  */
